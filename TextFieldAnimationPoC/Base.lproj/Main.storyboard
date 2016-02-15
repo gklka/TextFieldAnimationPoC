@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQu-Ld-AEp">
+                                <rect key="frame" x="0.0" y="489" width="600" height="111"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="field one" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cnm-bj-uus">
+                                        <rect key="frame" x="20" y="8" width="557" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="field two" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VWf-zf-Pul">
+                                        <rect key="frame" x="20" y="41" width="557" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.8980392157" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cnm-bj-uus" firstAttribute="top" secondItem="uQu-Ld-AEp" secondAttribute="top" constant="8" id="6O9-9E-j8Y"/>
+                                    <constraint firstItem="VWf-zf-Pul" firstAttribute="top" secondItem="cnm-bj-uus" secondAttribute="bottom" constant="3" id="8Ej-ms-Ox5"/>
+                                    <constraint firstAttribute="height" constant="111" id="9TP-Cl-z2c"/>
+                                    <constraint firstItem="VWf-zf-Pul" firstAttribute="leading" secondItem="uQu-Ld-AEp" secondAttribute="leading" constant="20" id="IOs-31-j6Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="VWf-zf-Pul" secondAttribute="trailing" constant="23" id="gJ5-eA-O4n"/>
+                                    <constraint firstItem="cnm-bj-uus" firstAttribute="leading" secondItem="uQu-Ld-AEp" secondAttribute="leading" constant="20" id="xvj-le-Frq"/>
+                                    <constraint firstAttribute="trailing" secondItem="cnm-bj-uus" secondAttribute="trailing" constant="23" id="yUa-Bg-GwG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uQu-Ld-AEp" secondAttribute="trailing" id="AWw-UP-btC"/>
+                            <constraint firstItem="uQu-Ld-AEp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bgA-Ia-CMR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uQu-Ld-AEp" secondAttribute="bottom" id="l2g-kW-dxR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="boxBottomConstraint" destination="l2g-kW-dxR" id="JIi-ep-7lK"/>
+                        <outlet property="fieldOne" destination="cnm-bj-uus" id="gaq-sa-T8j"/>
+                        <outlet property="fieldTwo" destination="VWf-zf-Pul" id="0xX-tx-BSw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="275" y="429"/>
+        </scene>
+    </scenes>
+</document>
